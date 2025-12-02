@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务进度追踪 - OPS预印本网站</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 任务进度追踪表</h1>
+            <p class="subtitle">OPS预印本网站开发项目</p>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">← 返回首页</a>
+            <a href="progress.html" class="nav-link highlight">进度追踪</a>
+            <a href="dev-guide.html" class="nav-link">开发指南</a>
+        </nav>
+
+        <main>
+            <!-- 总体进度 -->
+            <section class="section">
+                <h2>📈 总体进度</h2>
+                <div class="card">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 35%;">35%</div>
+                    </div>
+                    <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <div class="status-badge status-complete">✅ 已完成: 2项</div>
+                        <div class="status-badge status-progress">🔄 进行中: 1项</div>
+                        <div class="status-badge status-pending">⏸️ 待开始: 6项</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 里程碑 -->
+            <section class="section">
+                <h2>🎯 里程碑</h2>
+                <div class="card">
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 0.75rem;">
+                            <span class="status-icon">✅</span>
+                            <strong>M1</strong>: 评论插件开发完成 (已完成)
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <span class="status-icon">🔄</span>
+                            <strong>M2</strong>: 系统配置与优化完成 (进行中)
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <span class="status-icon">⏸️</span>
+                            <strong>M3</strong>: 测试完成 (待开始)
+                        </li>
+                        <li style="margin-bottom: 0.75rem;">
+                            <span class="status-icon">⏸️</span>
+                            <strong>M4</strong>: 生产环境上线 (待开始)
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 任务清单 -->
+            <section class="section">
+                <h2>✅ 任务清单</h2>
+
+                <!-- T1: 评论插件完善 -->
+                <div class="task-card in-progress">
+                    <div class="task-header">
+                        <div class="task-title">T1: 评论插件登录状态同步</div>
+                        <span class="priority-high">🔴 高优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>Yanx</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>4-6小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #f39c12;">🔄 进行中</strong>
+                        </div>
+                    </div>
+                    <p><strong>核心任务</strong>：实现OPS用户登录状态同步到Artalk评论系统</p>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t1-1" disabled>
+                            <label for="t1-1">读取OPS用户登录状态和信息</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t1-2" disabled>
+                            <label for="t1-2">将OPS用户信息传递给Artalk</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t1-3" disabled>
+                            <label for="t1-3">实现登录状态同步机制</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t1-4" disabled>
+                            <label for="t1-4">测试评论功能与权限控制</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t1-5" disabled>
+                            <label for="t1-5">优化代码和错误处理</label>
+                        </li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #6c757d; font-size: 0.9rem;">
+                        <strong>注</strong>：评论功能的其他部分（发表、回复、显示）已完成。
+                    </p>
+                </div>
+
+                <!-- T2: 中文翻译 -->
+                <div class="task-card">
+                    <div class="task-header">
+                        <div class="task-title">T2: 全站中文翻译检查</div>
+                        <span class="priority-high">🔴 高优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>[待分配]</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>6-8小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #6c757d;">⏸️ 待开始</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t2-1" disabled>
+                            <label for="t2-1">检查评论插件中文翻译</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t2-2" disabled>
+                            <label for="t2-2">检查OPS前台所有页面翻译</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t2-3" disabled>
+                            <label for="t2-3">检查系统提示信息翻译</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t2-4" disabled>
+                            <label for="t2-4">统一关键术语翻译</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- T3: 站点布局优化 -->
+                <div class="task-card">
+                    <div class="task-header">
+                        <div class="task-title">T3: 站点布局和视觉优化</div>
+                        <span class="priority-medium">🟡 中优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>[待分配]</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>4-6小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #6c757d;">⏸️ 待开始</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t3-1" disabled>
+                            <label for="t3-1">设计并上传网站Logo</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t3-2" disabled>
+                            <label for="t3-2">优化首页布局</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t3-3" disabled>
+                            <label for="t3-3">调整评论区样式（与网站风格统一）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t3-4" disabled>
+                            <label for="t3-4">优化页面导航栏</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- T4: 系统配置 -->
+                <div class="task-card">
+                    <div class="task-header">
+                        <div class="task-title">T4: 系统设置和配置确认</div>
+                        <span class="priority-high">🔴 高优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>[待分配]</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>2-3小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #6c757d;">⏸️ 待开始</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t4-1" disabled>
+                            <label for="t4-1">确认用户注册流程（邮箱验证 - OPS默认）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t4-2" disabled>
+                            <label for="t4-2">确认投稿权限设置（作者权限 - OPS默认）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t4-3" disabled>
+                            <label for="t4-3">确认评论权限（作者权限用户 - OPS默认）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t4-4" disabled>
+                            <label for="t4-4">完善网站基本信息（名称、描述、联系方式）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t4-5" disabled>
+                            <label for="t4-5">测试完整的用户流程</label>
+                        </li>
+                    </ul>
+                    <p style="margin-top: 1rem; color: #6c757d; font-size: 0.9rem;">
+                        <strong>注</strong>：用户权限和验证流程使用OPS默认设置，无需额外开发。主要是确认和测试。
+                    </p>
+                </div>
+
+                <!-- T5: 法律文档 -->
+                <div class="task-card">
+                    <div class="task-header">
+                        <div class="task-title">T5: 法律文档起草</div>
+                        <span class="priority-medium">🟡 中优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>[待分配]</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>8-10小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #6c757d;">⏸️ 待开始</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t5-1" disabled>
+                            <label for="t5-1">起草《用户使用协议》</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t5-2" disabled>
+                            <label for="t5-2">起草《版权声明》</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t5-3" disabled>
+                            <label for="t5-3">起草《隐私政策》</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t5-4" disabled>
+                            <label for="t5-4">将文档集成到网站</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- T6: 功能测试 -->
+                <div class="task-card">
+                    <div class="task-header">
+                        <div class="task-title">T6: 完整功能测试</div>
+                        <span class="priority-high">🔴 高优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>全员参与</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>8-10小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #6c757d;">⏸️ 待开始</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t6-1" disabled>
+                            <label for="t6-1">测试用户注册和登录流程</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t6-2" disabled>
+                            <label for="t6-2">测试文章投稿流程</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t6-3" disabled>
+                            <label for="t6-3">测试评论功能（发表、回复、查看）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t6-4" disabled>
+                            <label for="t6-4">测试权限控制（游客vs登录用户）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t6-5" disabled>
+                            <label for="t6-5">跨浏览器和设备测试</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- T7: 部署 -->
+                <div class="task-card">
+                    <div class="task-header">
+                        <div class="task-title">T7: 生产环境部署</div>
+                        <span class="priority-high">🔴 高优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>[待分配，需运维经验]</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>6-8小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #6c757d;">⏸️ 待开始</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t7-1" disabled>
+                            <label for="t7-1">创建生产环境VPS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t7-2" disabled>
+                            <label for="t7-2">配置服务器环境（Apache2, PHP, MySQL）</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t7-3" disabled>
+                            <label for="t7-3">部署OPS和Artalk服务</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t7-4" disabled>
+                            <label for="t7-4">配置HTTPS和域名</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t7-5" disabled>
+                            <label for="t7-5">设置自动备份</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- T8: 文档 -->
+                <div class="task-card completed">
+                    <div class="task-header">
+                        <div class="task-title">T8: 项目文档编写</div>
+                        <span class="priority-medium">🟡 中优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>Yanx</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>6-8小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #27ae60;">✅ 已完成</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t8-1" checked disabled>
+                            <label for="t8-1">项目概览文档</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t8-2" checked disabled>
+                            <label for="t8-2">开发维护指南</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t8-3" checked disabled>
+                            <label for="t8-3">任务进度追踪表</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t8-4" checked disabled>
+                            <label for="t8-4">GitHub Pages文档站点</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- T9: 用户手册 -->
+                <div class="task-card">
+                    <div class="task-header">
+                        <div class="task-title">T9: 用户使用手册</div>
+                        <span class="priority-medium">🟡 中优先级</span>
+                    </div>
+                    <div class="task-meta">
+                        <div class="task-meta-item">
+                            <span>👤 负责人:</span>
+                            <strong>[待分配]</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>⏱️ 预计工时:</span>
+                            <strong>4-6小时</strong>
+                        </div>
+                        <div class="task-meta-item">
+                            <span>📅 状态:</span>
+                            <strong style="color: #6c757d;">⏸️ 待开始</strong>
+                        </div>
+                    </div>
+                    <ul class="subtask-list">
+                        <li>
+                            <input type="checkbox" id="t9-1" disabled>
+                            <label for="t9-1">编写用户注册和登录指南</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t9-2" disabled>
+                            <label for="t9-2">编写文章投稿指南</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t9-3" disabled>
+                            <label for="t9-3">编写评论功能使用说明</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="t9-4" disabled>
+                            <label for="t9-4">编写常见问题FAQ</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- 更新说明 -->
+            <section class="section">
+                <h2>📝 如何更新进度</h2>
+                <div class="card">
+                    <p><strong>更新方法（推荐）：</strong></p>
+                    <ol>
+                        <li>在本地编辑 <code>progress.html</code> 文件</li>
+                        <li>修改对应任务的状态、复选框等</li>
+                        <li>使用Git提交并推送：
+                            <pre><code>git add progress.html
+git commit -m "更新任务进度"
+git push</code></pre>
+                        </li>
+                        <li>等待1-2分钟，GitHub Pages自动更新</li>
+                    </ol>
+                    
+                    <p style="margin-top: 1rem;"><strong>备选方法：</strong></p>
+                    <p>直接在GitHub网页界面编辑 <code>progress.html</code> 文件，点击Commit changes即可。</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>最后更新：2024-12-02</p>
+            <p>联系方式：项目微信群</p>
+        </footer>
+    </div>
+
+    <script>
+        // 可以添加JavaScript来实现本地复选框状态保存（使用localStorage）
+        // 但这只在用户自己的浏览器中生效，不会同步到其他人
+    </script>
+</body>
+</html>
